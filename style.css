@@ -23,6 +23,9 @@
 @font-face {
     font-family: CursorGothic;
     src: url('./fonts/CursorGothic-Bold.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
 /* Navbar Styling */
@@ -107,6 +110,10 @@ header {
   font-family: CursorGothic;
 }
 
+.section{
+  padding-bottom: 2rem;
+}
+
 /* Main -> Section 1 styling */
 
 #section-1 {
@@ -171,4 +178,42 @@ header {
   right: 0.625rem;
   bottom: 1.875rem;
   z-index: 1;
+}
+
+/* Main -> Section2 styling */
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--btn-pad-y) var(--btn-pad-x);
+}
+
+#logo-garden{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(8, 1fr) ;
+  gap: calc(calc(10rem / 16) *1);
+  margin-top: calc(1rem*1.4);
+  width: 100%;
+}
+
+.flexbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6.25rem;
+  border: var(--btn-border);
+  border-radius: 4px;
+    color: var(--text-color);
+    font-size: 1rem;
+  background-color: #1b1913;
+  padding: 7.5px;
+}
+
+.logo-img{
+  width: 100px;
+  height: 6.25rem;
+  color: transparent;
 }
