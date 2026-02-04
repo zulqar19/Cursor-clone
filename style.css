@@ -2,6 +2,7 @@
   --text-color: #edecec;
   --bg-color: #14120b;
   --font-size: 1.625rem;
+  --sub-bg-color: #1b1913;
 
   /* For buttons */
   --btn-border: 1px solid color-mix(in oklab, #edecec 20%, transparent);
@@ -21,11 +22,11 @@
 }
 
 @font-face {
-    font-family: CursorGothic;
-    src: url('./fonts/CursorGothic-Bold.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-family: CursorGothic;
+  src: url("./fonts/CursorGothic-Bold.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* Navbar Styling */
@@ -110,8 +111,8 @@ header {
   font-family: CursorGothic;
 }
 
-.section{
-  padding-bottom: 2rem;
+.section {
+  padding-bottom: 3rem;
 }
 
 /* Main -> Section 1 styling */
@@ -151,18 +152,17 @@ header {
   background-color: var(--btn-hover-white);
 }
 
-
-.right{
+.right {
   position: relative;
 }
 
-#scenary{
+#scenary {
   position: relative;
 
   z-index: 0;
 }
 
-#cursor-img{
+#cursor-img {
   position: absolute;
   top: 1.25rem;
   left: 2.8125rem;
@@ -171,7 +171,7 @@ header {
   height: 90%;
 }
 
-#cursor-agent-image{
+#cursor-agent-image {
   width: 330px;
   height: 320px;
   position: absolute;
@@ -182,7 +182,7 @@ header {
 
 /* Main -> Section2 styling */
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -190,30 +190,104 @@ header {
   padding: var(--btn-pad-y) var(--btn-pad-x);
 }
 
-#logo-garden{
+#logo-garden {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: repeat(8, 1fr) ;
-  gap: calc(calc(10rem / 16) *1);
-  margin-top: calc(1rem*1.4);
+  grid-template-columns: repeat(8, 1fr);
+  gap: calc(calc(10rem / 16) * 1);
+  margin-top: calc(1rem * 1.4);
   width: 100%;
 }
 
-.flexbox{
+.flexbox {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 6.25rem;
   border: var(--btn-border);
   border-radius: 4px;
-    color: var(--text-color);
-    font-size: 1rem;
-  background-color: #1b1913;
+  color: var(--text-color);
+  font-size: var(--font-size);
+  background-color: var(--sub-bg-color);
   padding: 7.5px;
 }
 
-.logo-img{
+.logo-img {
   width: 100px;
   height: 6.25rem;
   color: transparent;
+}
+
+/* Main -> Section 3 Styling */
+
+.section3 {
+  padding: calc(var(--btn-pad-y) * 1.4) calc(var(--btn-pad-x) * 3.9);
+}
+
+.container3 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  background-color: var(--sub-bg-color);
+  border-radius: 0.5rem;
+}
+
+.sub-conatiner-left {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: var(--btn-pad-y) var(--btn-pad-x);
+  line-height: 1.5;
+}
+
+.section-text {
+  color: #edecec99;
+}
+
+.learn-agent {
+  color: #f54e00;
+  font-size: calc(var(--font-size) * 0.525);
+  line-height: 3.5;
+}
+
+.sub-conatiner-right {
+  grid-column: span 8;
+  padding: calc(var(--btn-pad-y) * 2.9) calc(var(--btn-pad-x) * 2.1);
+  /* position: relative; */
+  width: 100%;
+  height: 100%;
+}
+
+.section3-bg-image {
+  width: 100%;
+  height: 90%;
+}
+
+#section3-bg-image {
+  position: relative;
+  z-index: 0;
+}
+
+.section3-cursor-img {
+  position: absolute;
+  z-index: 1;
+  width: 90%;
+  height: 90%;
+  top: 20px;
+  left: 50px;
+}
+
+.section3-cursor-img-small {
+  position: absolute;
+  z-index: 1;
+  width: 400px;
+  height: 300px;
+  bottom: 20px;
+  right: 50px;
+}
+
+.sub-section {
+  margin: 4rem 0;
 }
