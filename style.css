@@ -294,25 +294,64 @@ header {
 
 /* Main -> Section4 Styling */
 
-
 .section4 {
   padding: calc(var(--btn-pad-y) * 1.4) calc(var(--btn-pad-x) * 3.9);
 }
 
-.container4 div h2{
+.container4 div h2 {
   text-align: center;
   margin-bottom: 2rem;
   font-size: var(--font-size);
 }
 
-.card-collection{
+.card-collection {
   display: grid;
-  grid-template-columns: repeat(3 , 1fr);
-  grid-template-rows: repeat(2 , 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   padding: calc(var(--btn-pad-y) * 1.4) calc(var(--btn-pad-x) * 3.9);
   gap: 1rem;
 }
 
-.card{
+.card {
   background-color: var(--sub-bg-color);
+  height: 18rem;
+  padding-top: var(--btn-pad-x);
+  padding-bottom: var(--btn-pad-y);
+  color: var(--text-color);
 }
+
+.card figure {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  padding: var(--btn-pad-y) var(--btn-pad-x);
+  height: 100%;
+}
+
+.card figure blockquote {
+  grid-row: span -1;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.card-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.card-flex figcaption {
+  padding-left: 10px;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.card-flex figcaption span {
+  color: #edecec99;
+}
+
+/* Main -> Section 5 Styling */
