@@ -38,9 +38,12 @@ html {
 
 header {
   position: fixed;
+    top: 0;
+  right: 0;
+  left: 0;
   background-color: var(--bg-color);
   color: var(--text-color);
-  width: 100%;
+  max-width: 100%;
   padding: 0 1rem;
   z-index: 2;
   font-family: CursorGothic;
@@ -112,12 +115,8 @@ header {
 #main {
   background-color: var(--bg-color);
   color: var(--text-color);
-  width: 100%;
+  max-width: 100%;
   font-family: CursorGothic;
-}
-
-.section {
-  padding-bottom: 3rem;
 }
 
 /* Main -> Section 1 styling */
@@ -133,7 +132,7 @@ header {
   letter-spacing: -0.0125em;
   text-wrap: balance;
   margin-bottom: 22.4px;
-  width: 37.5rem;
+  max-width: 37.5rem;
 }
 
 .left div {
@@ -172,12 +171,12 @@ header {
   top: 1.25rem;
   left: 2.8125rem;
   z-index: 1;
-  width: 90%;
+  max-width: 90%;
   height: 90%;
 }
 
 #cursor-agent-image {
-  width: 330px;
+  max-width: 330px;
   height: 320px;
   position: absolute;
   right: 0.625rem;
@@ -199,9 +198,9 @@ header {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(8, 1fr);
-  gap: calc(calc(10rem / 16) * 1);
+  gap: 0.625rem;
   margin-top: calc(1rem * 1.4);
-  width: 100%;
+  max-width: 100%;
 }
 
 .flexbox {
@@ -220,7 +219,6 @@ header {
 .logo-img {
   width: 100px;
   height: 6.25rem;
-  color: transparent;
 }
 
 /* Main -> Section 3 Styling */
@@ -261,12 +259,12 @@ header {
   grid-column: span 8;
   padding: calc(var(--btn-pad-y) * 2.9) calc(var(--btn-pad-x) * 2.1);
   /* position: relative; */
-  width: 100%;
+  max-width: 100%;
   height: 100%;
 }
 
 .section3-bg-image {
-  width: 100%;
+  max-width: 100%;
   height: 90%;
 }
 
@@ -278,7 +276,7 @@ header {
 .section3-cursor-img {
   position: absolute;
   z-index: 1;
-  width: 90%;
+  max-width: 90%;
   height: 90%;
   top: 20px;
   left: 50px;
@@ -287,7 +285,7 @@ header {
 .section3-cursor-img-small {
   position: absolute;
   z-index: 1;
-  width: 400px;
+  max-width: 400px;
   height: 300px;
   bottom: 20px;
   right: 50px;
@@ -333,9 +331,7 @@ header {
   height: 100%;
 }
 
-.card figure blockquote {
-  grid-row: span -1;
-}
+
 
 .icon {
   width: 40px;
@@ -381,7 +377,7 @@ header {
 }
 
 .card-image {
-  width: 100%;
+  max-width: 100%;
 }
 
 /* Main -> Section 6 styling */
@@ -437,7 +433,7 @@ time {
 }
 
 .container7 h2 {
-  width: 37.5rem;
+  max-width: 37.5rem;
   font-size: calc(var(--font-size) * 1.2);
   margin-bottom: 2rem;
 }
@@ -484,7 +480,7 @@ time {
 }
 
 .highlights {
-  width: 37.5rem;
+  max-width: 37.5rem;
   padding: calc(var(--btn-pad-y)) calc(var(--btn-pad-x));
   color: var(--text-color);
   background-color: var(--btn-hover-black);
