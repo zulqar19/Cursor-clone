@@ -11,7 +11,7 @@ This project is a **static landing page** inspired by the Cursor website, built 
 * CSS Grid & Flexbox for layouts
 * CSS Variables for consistent theming
 * Custom font loading using `@font-face`
-* Responsive-friendly layout (desktop-first)
+* layout (desktop-first)
 * Card-based UI components
 * Accessible markup foundations (alt text, landmarks)
 
